@@ -7,7 +7,6 @@ function resolve (_path) {
 module.exports = {
   chainWebpack: (config) => {
     config.resolve.alias
-      .set('api', resolve('./src/api'))
       .set('common', resolve('./src/common'))
       .set('components', resolve('./src/components'))
       .set('plugins', resolve('./src/plugins'))
