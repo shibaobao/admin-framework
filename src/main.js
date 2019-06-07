@@ -1,11 +1,21 @@
 import Vue from 'vue'
-import App from './app.vue'
-import router from 'plugins/router'
 import store from 'store'
-import 'plugins/element-ui'
+import App from './app.vue'
+import http from 'plugins/$http'
+import router from 'plugins/router'
+import storage from 'vue-ls'
+
+import 'plugins/ant-design'
 import 'common/scss/index.scss'
 
 Vue.config.productionTip = false
+
+Vue.use(http)
+Vue.use(storage, {
+  namespace: 'MMS_',
+  name: 'ls',
+  storage: 'local'
+})
 
 new Vue({
   router,
