@@ -1,5 +1,5 @@
 <template>
-  <div class="v-main sort-message"></div>
+  <div class="v-main company-list"></div>
 </template>
 
 <script>
@@ -9,5 +9,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sort-message {}
+.company-list {}
 </style>
+

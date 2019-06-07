@@ -11,4 +11,3 @@ export default {
 <style lang="scss" scoped>
 .sites {}
 </style>
-
