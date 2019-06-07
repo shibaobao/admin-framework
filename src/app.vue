@@ -1,7 +1,7 @@
 <template>
   <div class="v-app">
     <v-header></v-header>
-    <section class="v-main">
+    <section class="v-main-wrap">
       <side-nav></side-nav>
       <router-view />
     </section>
@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 .v-app {
   height: 100%;
-  .v-main {
+  .v-main-wrap {
     display: flex;
     height: calc(100% - 60px);
   }
